@@ -14,6 +14,11 @@ public class Diagnostico {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "doutor_id")
+    private Doutor doutor;
+
+
+    @ManyToOne
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
 

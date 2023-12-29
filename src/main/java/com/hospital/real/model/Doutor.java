@@ -20,8 +20,12 @@ public class Doutor {
     private String email;
     private String crm;
 
+    @Column(name = "quantidade_pacientes")
+    private int quantidadePacientes;
+
+
     @OneToMany(mappedBy = "doutor", cascade = CascadeType.ALL)
-    private List<Paciente> pacientes;
+    private List<Diagnostico> diagnosticos;
 
     // getters e setters
 }

@@ -18,6 +18,8 @@ public class Paciente {
     private String nome;
     private String email;
     private String telefone;
+    private String especializacaoDesejada;
+    private String problema;
 
     @ManyToOne
     @JoinColumn(name = "doutor_id")
